@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'view/simple_interest.dart'; // Import the SimpleInterestView
+import 'view/area_of_circle.dart'; // Import the new view
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SimpleInterestView(), // Set SimpleInterestView as the home
+      home: AreaOfCircleView(), // Set AreaOfCircleView as the home
     );
   }
 }
