@@ -43,3 +43,10 @@ class _ShowSnackbarViewState extends State<ShowSnackbar> {
     );
   }
 }
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+}
