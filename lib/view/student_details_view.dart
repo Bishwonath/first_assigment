@@ -1,3 +1,4 @@
+import 'package:first_assignment/core/common/my_snack_bar.dart';
 import 'package:first_assignment/core/common/student_listview.dart';
 import 'package:first_assignment/model/student.dart';
 import 'package:flutter/material.dart';
@@ -84,6 +85,8 @@ class _StudentDetailsViewState extends State<StudentDetailsView> {
                   lname: _lnameController.text.trim(), 
                   city: selectedCity!,
                   );
+                  showMySnackbar(context: context, message: "Successfully", color: Colors.green);
+
                   setState(() {
                     stdlist.add(studentdata);
 
@@ -102,7 +105,7 @@ class _StudentDetailsViewState extends State<StudentDetailsView> {
                 Navigator.pushNamed(
                 context, 
                 "/data",
-                arguments: stdlist)
+                arguments: stdlist),
               },
               child: Text("View students"),),
             ),
